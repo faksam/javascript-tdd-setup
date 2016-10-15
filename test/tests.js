@@ -22,4 +22,52 @@ it("Correct!, Sum of primes between 0 - 10 is 17", function() {
   );
 });
 
+//3
+
+it("Correct!, Sum of primes between 0 - 17 is 58", function() {
+  assert(
+    lib.sumOfPrimes(17)==58
+  );
+});
+
+//4
+
+it("Correct!, Sum of primes between 0 - 29 is 129", function() {
+  assert(
+    lib.sumOfPrimes(29)==129
+  );
+});
+
+//5
+
+it("Correct!!!, Found incorrect input", function() {
+  assert(
+    lib.sumOfPrimes("aString")==false
+  );
+});
+
+//6
+
+it("Correct!!!, Sum of primes between 0 - 29 is 129", function() {
+  assert(
+    lib.sumOfPrimes(0)==false
+  );
+});
+
+//7
+
+it("Correct!!!, Found incorrect input", function() {
+  assert(
+    lib.sumOfPrimes(-29)==false
+  );
+});
+
+//8
+
+it("Incorrect!!!, Sum of primes between 0 - 29 is 129", function() {
+  assert(
+    lib.sumOfPrimes([29,78,23,67])==false
+  );
+});
+
 });
