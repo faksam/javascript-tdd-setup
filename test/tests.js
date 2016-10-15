@@ -48,7 +48,7 @@ it("Correct!!!, Found incorrect input", function() {
 
 //6
 
-it("Correct!!!, Sum of primes between 0 - 29 is 129", function() {
+it("Correct!!!, Sum of primes between 0 - 0 is 0", function() {
   assert(
     lib.sumOfPrimes(0)==false
   );
@@ -64,9 +64,25 @@ it("Correct!!!, Found incorrect input", function() {
 
 //8
 
-it("Incorrect!!!, Sum of primes between 0 - 29 is 129", function() {
+it("Correct!!!, Found incorrect input", function() {
   assert(
     lib.sumOfPrimes([29,78,23,67])==false
+  );
+});
+
+//9
+
+it("Correct!!!, Found incorrect input", function() {
+  assert(
+    lib.sumOfPrimes('c')==false
+  );
+});
+
+//10
+
+it("Correct!!!, Sum of primes between 0 - 57 is 381", function() {
+  assert(
+    lib.sumOfPrimes(57)==381
   );
 });
 
